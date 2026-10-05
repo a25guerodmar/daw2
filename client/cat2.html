@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="gato" src="https://i.pinimg.com/236x/18/85/21/18852105e109c6020d4089b37cc8403e.jpg" alt="Imagen de gato">
+    <h2 id="contador">0</h2>
+    <img id="gato2" src="https://i.pinimg.com/236x/1d/40/0e/1d400e79e924b844848049f3e52172b2.jpg" alt="Imagen de gato">
+    <h2 id="contador2">0</h2>
+
+</body>
+<script>
+    const IMAGEN =  document.getElementById("gato");
+    const IMAGEN2 =  document.getElementById("gato2");
+    const CONTADOR = document.getElementById("contador");
+    const CONTADOR2 = document.getElementById("contador2");
+    let contador = 0;
+    let contador2 = 0;
+    IMAGEN.addEventListener("click", () => {
+        contador++;
+        CONTADOR.innerHTML = contador;
+    })
+    IMAGEN2.addEventListener("click", () => {
+        contador2++;
+        CONTADOR2.innerHTML = contador2;
+    })
+</script>
+</html>
