@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="gato" src="https://i.pinimg.com/236x/18/85/21/18852105e109c6020d4089b37cc8403e.jpg" alt="Imagen de gato">
+    <h2 id="contador">0</h2>
+</body>
+<script>
+    const IMAGEN =  document.getElementById("gato");
+    const CONTADOR = document.getElementById("contador");
+    let contador = 0;
+    IMAGEN.addEventListener("click", () => {
+        contador++;
+        CONTADOR.innerHTML = contador;
+    })
+</script>
+</html>
